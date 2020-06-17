@@ -45,7 +45,6 @@ a button, button
 a button:hover, button:hover
     background: none 
     color: black
-
     span 
         background: $button
         width: 108px
@@ -78,6 +77,9 @@ a button:hover
 
 @import zd-global
 @import contact-form
+
+.contact 
+    padding-bottom: 70px   !important  
 
 ::placeholder 
     font: $mainfont
@@ -304,3 +306,10 @@ p.drop-cap:first-letter
     padding: 10px 5px  
     text-align: center      
     
+@media screen and ( max-width: 550px )
+    .cta, .service-element
+        flex-direction: column !important
+    .service-element-content
+        max-width: 100%    !important
+    .service-element-image 
+        width: 100% !important    
