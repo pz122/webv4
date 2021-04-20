@@ -1,0 +1,121 @@
+html
+    background: #f7f7f7
+    color: #777777
+
+@font-face
+    font-family: Avenir
+    src: url('assets/fonts/Avenir-Medium-09.ttf')
+    src: url('assets/fonts/Avenir-Light-07.ttf')
+    src: url('assets/fonts/Avenir-Roman-12.ttf')
+
+body
+    padding: 80px 50px
+    font-family: Avenir
+
+#logo 
+    float: right
+    position: relative
+
+#main-text
+    position: relative
+    margin-top: 150px 
+    h1 
+        font-size: 50px
+    h2 
+        font-size: 36px
+    li 
+        list-style-type: upper-roman
+        font-size: 17px 
+        line-height: 50px
+
+#line 
+    width: 1px
+    height: 100px
+    background: black
+    display: block
+    margin-bottom: 20px 
+
+#highlight
+    color: #383838
+    display: inline-block
+    animation-name: slide
+    animation-duration: 1s
+    animation-fill-mode: forwards
+
+@-webkit-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+    opacity: 0
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+    opacity: 1
+
+@-moz-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+  50%   
+    opacity: 0.7
+  100%
+    transform: translate(0px,0px)
+
+@-o-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+
+@keyframes slide
+  0%   
+    transform: translate(0px,20px)
+    opacity: 0
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+    opacity: 1
+
+
+button
+    border: none 
+    background: none 
+    margin-left: -10px
+    a 
+        border-bottom: 0.5px #808080 solid
+        font-size: 18px
+        color: #808080
+        font-family: Avenir Book
+    a:hover
+        animation-name: btn
+        animation-duration: 3s
+        animation-fill-mode: forwards
+        border-bottom: 2px solid 
+
+@keyframes btn 
+    0% 
+        color: #8f8f8f
+    100% 
+        color: #000000
+#underline 
+    width: 100px
+    height: 1px
+a 
+    text-decoration: none 
+    color: #f4f4f4
+    color: #383838
+footer
+    width: 100%
+    margin-top: 150px 
+    float: right
+    font-family: Avenir light
+    margin-bottom: 70px
+    display: flex
+    flex-direction: row 
+    justify-content: space-between
+    #copyright
+        display: flex
+        flex-direction: row 
+        align-items: flex-end
