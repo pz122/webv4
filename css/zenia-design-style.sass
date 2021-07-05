@@ -1,0 +1,150 @@
+html
+  background: #fcfcfc
+
+
+$main-text: 'IBM Plex Sans', sans-serif
+$highlight-text: 'IBM Plex Serif', serif;
+
+body
+  padding: 80px 50px
+  font-family: $main-text
+
+#logo 
+  float: right
+  position: relative
+
+.banner 
+  display: flex 
+  flex-direction: row 
+  flex-wrap: wrap 
+  max-width: 60% 
+  min-height: 100px
+  justify-content: space-around 
+  align-items: center
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);  
+  color: black
+  font-size: 18px
+  border-radius: 30px
+  padding: 20px 20px 
+  margin: 80px 0px 
+  -webkit-box-shadow: 1px 3px 20px 5px #BFD3E3, 1px 12px 10px -13px rgba(191,211,227,0.07); 
+  box-shadow: 1px 3px 20px 5px #BFD3E3, 1px 12px 10px -13px rgba(191,211,227,0.07);
+  span 
+    font-size: 32px
+
+#main-text
+  position: relative
+  margin-top: 50px 
+  color: #000000
+  h1 
+    font-size: 40px
+    color: #0c43f5
+  p 
+    font-size: 18px
+    max-width: 75%
+    font-weight: 300
+    font-family: $main-text
+  li 
+    list-style-type: upper-roman
+    font-size: 17px 
+    line-height: 50px
+
+#line 
+  width: 1px
+  height: 100px
+  background: black
+  display: block
+  margin-bottom: 20px 
+
+#highlight
+  color: #0c43f5
+  display: inline-block
+  animation-name: slide
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  font-family: $highlight-text
+
+@-webkit-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+    opacity: 0
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+    opacity: 1
+
+@-moz-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+  50%   
+    opacity: 0.7
+  100%
+    transform: translate(0px,0px)
+
+@-o-keyframes slide 
+  0%   
+    transform: translate(0px,30px)
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+
+@keyframes slide
+  0%   
+    transform: translate(0px,20px)
+    opacity: 0
+  50%   
+    opacity: 0.7
+  100% 
+    transform: translate(0px,0px)
+    opacity: 1
+
+
+button
+    border: none 
+    background: none 
+    margin-left: -10px
+    a 
+        border-bottom: 0.5px #808080 solid
+        font-size: 18px
+        color: #808080
+        font-family: Avenir Book
+    a:hover
+        animation-name: btn
+        animation-duration: 3s
+        animation-fill-mode: forwards
+        border-bottom: 2px solid 
+
+@keyframes btn 
+    0% 
+        color: #8f8f8f
+    100% 
+        color: #000000
+#underline 
+    width: 100px
+    height: 1px
+a 
+    text-decoration: none 
+    color: #f4f4f4
+    color: #383838
+footer
+    width: 100%
+    margin-top: 150px 
+    float: right
+    font-family: Avenir light
+    margin-bottom: 70px
+    display: flex
+    flex-direction: row 
+    justify-content: space-between
+    #copyright
+        display: flex
+        flex-direction: row 
+        align-items: flex-end
+
+.themes 
+  margin: 50px 0px 
+.theme-item
+  text-align: center
+  h2
+    font-size: 21px
