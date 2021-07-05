@@ -1,6 +1,5 @@
 html {
-  background: #f7f7f7;
-  background-olor: #777777;
+  background: #fcfcfc;
 }
 
 body {
@@ -31,7 +30,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
-  color: white;
+  color: black;
   font-size: 18px;
   border-radius: 30px;
   padding: 20px 20px;
@@ -47,21 +46,25 @@ body {
 #main-text {
   position: relative;
   margin-top: 50px;
-  color: #616161;
+  color: #000000;
 }
 
 #main-text h1 {
-  font-size: 50px;
+  font-size: 40px;
+  color: #0c43f5;
 }
 
-#main-text h2 {
-  font-size: 36px;
+#main-text p {
+  font-size: 18px;
+  max-width: 75%;
+  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 #main-text li {
   list-style-type: upper-roman;
   font-size: 17px;
-  ine-height: 50px;
+  line-height: 50px;
 }
 
 #line {
@@ -73,7 +76,7 @@ body {
 }
 
 #highlight {
-  color: #282828;
+  color: #0c43f5;
   display: inline-block;
   -webkit-animation-name: slide;
           animation-name: slide;
@@ -197,5 +200,17 @@ footer #copyright {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.themes {
+  margin: 50px 0px;
+}
+
+.theme-item {
+  text-align: center;
+}
+
+.theme-item h2 {
+  font-size: 21px;
 }
 /*# sourceMappingURL=zenia-design-style.css.map */
