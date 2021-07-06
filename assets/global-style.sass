@@ -1,0 +1,48 @@
+html
+  background: #fcfcfc
+
+
+$main-text: 'IBM Plex Sans', sans-serif
+$highlight-text: 'IBM Plex Serif', serif;
+$blue: #0c43f5
+
+body
+  padding: 80px 50px
+  font-family: $main-text
+
+#logo 
+  float: right
+  position: relative
+
+a 
+    text-decoration: none 
+    color: #f4f4f4
+    color: #383838
+footer
+    width: 100%
+    margin-top: 150px 
+    float: right
+    font-family: Avenir light
+    margin-bottom: 70px
+    display: flex
+    flex-direction: row 
+    justify-content: space-between
+    #copyright
+        display: flex
+        flex-direction: row 
+        align-items: flex-end
+
+#text
+    border-bottom: 0.5px #808080 solid
+    color: #808080
+#text:hover
+    animation-name: btn
+    animation-duration: 1s
+    animation-fill-mode: forwards
+    border-bottom: 2px solid 
+
+@keyframes btn 
+    0% 
+        color: #8f8f8f
+    100% 
+        color: #000000
